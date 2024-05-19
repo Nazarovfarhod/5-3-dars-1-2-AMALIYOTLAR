@@ -1,3 +1,5 @@
+/*_____________________1-AMALIYOT.CSS________________________ */
+
 @font-face {
   font-display: swap;
   font-family: "Mulish";
@@ -7,18 +9,19 @@
 }
 @font-face {
   font-display: swap;
-  font-family: 'Mulish';
+  font-family: "Mulish";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/mulish-v13-latin-700.woff2') format('woff2');
+  src: url("../fonts/mulish-v13-latin-700.woff2") format("woff2");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #fff;
 }
-
+/*
 body {
   background-color: #e1e1e1;
   font-family: "Mulish";
@@ -53,4 +56,57 @@ body {
   width: 100%;
   color: #555;
   font-size: 14px;
+} */
+
+/*_____________________2-AMALIYOT.CSS________________________ */
+
+body {
+  font-weight: 500;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Mulish";
+  background: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgba(204, 204, 204, 0.5);
+  padding: 15px 25px;
+  border-radius: 12px;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-bottom: 25px;
+}
+
+.container:hover {
+  box-shadow: -1px 7px 25px 13px rgba(30, 6, 6, 0.37);
+  transform: scale(1.005);
+}
+
+.container h1 {
+  font-weight: 700;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 60px;
+}
+
+@media (max-width: 460px) {
+  .container h1 {
+    font-size: 22px;
+  }
 }
