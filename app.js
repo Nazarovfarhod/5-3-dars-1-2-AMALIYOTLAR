@@ -72,7 +72,7 @@ function setGradient() {
   const color1 = getGradient();
   const color2 = getGradient();
   const randomDeg = Math.floor(Math.random() * 360);
-  const bgColor = `liner-gradient(
+  const bgColor = `linear-gradient(
     ${randomDeg}deg,
     ${color1},
     ${color2}
